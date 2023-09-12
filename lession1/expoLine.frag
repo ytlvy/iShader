@@ -21,7 +21,10 @@ void main() {
 
     //function
     // float y = st.x;
-    float fun = pow(st.x, 4.);
+    // float fun = pow(st.x, 4.);
+    // float fun = smoothstep(0.1,0.9,st.x);
+    float fun = smoothstep(0.1, 0.5, st.x) - smoothstep(0.5, 0.9, st.x); // 二维曲线 x=0.5 达到最大值1, 
+
 
     //画图
     vec3 color = vec3(fun);
